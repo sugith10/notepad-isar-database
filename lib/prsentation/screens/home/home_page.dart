@@ -6,25 +6,25 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       body: Column(
-children: [
-  GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-    crossAxisCount: 3,
-    crossAxisSpacing: 10
-  ), 
-  itemBuilder: (BuildContext ctx, int index){
-    
-  } )
-  
-  ,Text('sasshhs')],
+        children: [
+          GridView.builder(
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 3, crossAxisSpacing: 10),
+              itemBuilder: (BuildContext ctx, int index) {})
+        ],
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: (){
-          Navigator.push(context, MaterialPageRoute(builder: (context)=> CreatePage()));
+        onPressed: () {
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => CreatePage()));
         },
-      child: const Icon(Icons.add_circle_outline_sharp, size: 50,),
-       ),
+        child: const Icon(
+          Icons.add_circle_outline_sharp,
+          size: 50,
+        ),
+      ),
     );
   }
 }
