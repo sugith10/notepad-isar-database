@@ -7,14 +7,14 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          GridView.builder(
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 3, crossAxisSpacing: 10),
-              itemBuilder: (BuildContext ctx, int index) {})
-        ],
-      ),
+      // body: Column(
+      //   children: [
+      //     GridView.builder(
+      //         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+      //             crossAxisCount: 3, crossAxisSpacing: 10),
+      //         itemBuilder: (BuildContext ctx, int index) {})
+      //   ],
+      // ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.push(
